@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Reports</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <ul class="dropdown-menu">
+            <li>
+                <form action="/ongoingTicketsReport" method="POST">
+                    <button class="dropdown-item" type="submit">
+                        Cumulative Ongoing Tickets Report
+                    </button>
+                </form>
+            </li>
+            <li>
+                <form action="/fulfilledTicketsWeeklyReport" method="POST">
+                    <input type="hidden" value="weekly" name="timeCon">
+                    <button class="dropdown-item" type="submit">
+                        Fulfilled Tickets Weekly Report
+                    </button>
+                </form>
+            </li>
+            <li>
+                <form action="/fulfilledTicketsMonthlyReport" method="POST">
+                    <input type="hidden" value="monthly" name="timeCon">
+                    <button class="dropdown-item" type="submit">
+                        Fulfilled Tickets Monthly Report
+                    </button>
+                </form>
+            </li>
+            <li>
+                <form action="/fulfilledTicketsReport" method="POST">
+                    <input type="hidden" value="alltime" name="timeCon">
+                    <button class="dropdown-item" type="submit">
+                        Fulfilled Tickets All Time Report
+                    </button>
+                </form>
+            </li>
+            <li>
+                <form action="/ticketRatingsWeeklyReport" method="POST">
+                    <input type="hidden" value="weekly" name="timeCon">
+                    <button class="dropdown-item" type="submit">
+                        Ratings on Fulfilled Tickets Weekly
+                        Report
+                    </button>
+                </form>
+            </li>
+            <li>
+                <form action="/ticketRatingsMonthlyReport" method="POST">
+                    <input type="hidden" value="monthly" name="timeCon">
+                    <button class="dropdown-item" type="submit">
+                        Ratings on Fulfilled Tickets Monthly
+                        Report
+                    </button>
+                </form>
+            </li>
+            <li>
+                <form action="/ticketRatingsReport" method="POST">
+                    <input type="hidden" value="alltime" name="timeCon">
+                    <button class="dropdown-item" type="submit">
+                        Ratings on Fulfilled Tickets All
+                        Time Report
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
